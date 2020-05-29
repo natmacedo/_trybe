@@ -1,19 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-</head>
-<body>
-  <fieldset>
-    <label for="name">Escreva seu nome</label>
-    <input id="name" name="texto" type="text" maxlength="40" required="required">
-    <label for="email">Digite seu e-mail</label>
-    <input id="email" name="f-email" type="text" maxlength="50" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-    
-  </fieldset>
-    
-</body>
+  </head>
+  <body>
+    <fieldset>
+      <label for="name">Escreva seu nome</label>
+      <input
+        id="name"
+        name="texto"
+        type="text"
+        maxlength="40"
+        required="required"
+      />
+      <label for="email">Digite seu e-mail</label>
+      <input
+        id="email"
+        name="f-email"
+        type="text"
+        maxlength="50"
+        required="required"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+      />
+      <label for="cpf">Informe seu CPF</label>
+      <input
+        id="cpf"
+        name="cadastro"
+        type="text"
+        maxlength="11"
+        required="required"
+      />
+      <label for="end">Informe seu endereço</label>
+      <input
+        id="end"
+        name="moradia"
+        type="text"
+        maxlength="200"
+        required="required"
+      />
+      <label for="city">Informe sua cidade</label>
+      <input
+        id="city"
+        name="cidade"
+        type="text"
+        maxlength="28"
+        required="required"
+      />
+      <select required="required" id="lista-estados"></select>
+      <input
+        type="radio"
+        id="apt"
+        name="edificio"
+        value="apartamento"
+        required="required"
+      />
+      <label for="apt">Apartamento</label><br />
+      <input
+        type="radio"
+        id="home"
+        name="residencia"
+        value="casa"
+        required="required"
+      />
+      <label for="home">Casa</label><br />
+    </fieldset>
+    <fieldset>
+      <label>Resumo do currículo</label>
+      <textarea maxlength="1000" required="required"> </textarea>
+      <label for="funcao">Cargo</label>
+      <input
+        type="text"
+        id="funcao"
+        value="cargo"
+        required="required"
+        maxlength="40"
+      />
+      <label for="description">Descrição</label>
+      <input
+        type="text"
+        id="description"
+        required="required"
+        maxlength="500"
+      />
+      <label for="date">Data de início</label>
+      <input type="text" id="date" required="required" />
+    </fieldset>
+    <input type="button" name="break">
+    <input type="button" name="Limpar">
+
+  </body>
+  <script type="text/javascript" src="script.js"></script>
 </html>

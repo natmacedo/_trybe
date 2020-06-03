@@ -1,15 +1,22 @@
 
-let estados = [ 'Acre','Alagoas','Amapá','Amazonas','Bahia','Ceará','Distrito Federal','Espírito Santo',
+const estados = [ 'Acre','Alagoas','Amapá','Amazonas','Bahia','Ceará','Distrito Federal','Espírito Santo',
 'Goiás','Maranhão','Mato Grosso','Mato Grosso do Sul','Minas Gerais','Pará','Paraíba','Paraná','Pernambuco',
 'Piauí','Rio de Janeiro','Rio Grande do Norte','Rio Grande do Sul','Rondônia','Roraima','Santa Catarina','São Paulo','Sergipe','Tocantins'];
-let list=document.getElementById("lista-estados");
+const list=document.getElementById("lista-estados");
+let container=document.getElementsByTagName('select');
 
 
-/*for (list of estados) {
-  let option = document.create("option");
-  let element = list.appendChild(option);
-  element.innerText = item[0];
-  element.value = item[1];
-}*/
+function criarEstados() {
+  for (let i = 0; i < estados.length; i += 1) {
+    const listEstado = document.createElement('option');
+    listEstado.innerText = estados[i][0];
+    listEstado.value = estados[i][1];
+    list.appendChild(listEstado);
+  }
+}
 
-function preventDefault() 
+window.onload = function () {
+  criarEstados();
+}
+
+//function preventDefault() 
